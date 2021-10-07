@@ -1,0 +1,24 @@
+h1 {
+    color: royalblue;
+}
+
+body {
+    background-image: url ("/assets/img/la_mila_fondo.png");
+    background-size: cover;
+}
+
+.thirdDiv {
+    width: 500px;
+    height: 600px;
+    background-color: lightseagreen;
+    padding: 50px;
+    border: 15px double lightgray;
+}
+img {
+    height: 250px;
+    background-color: transparent;
+}
+#spanId {
+    font-size: 25px;
+    margin: 50px;
+}
