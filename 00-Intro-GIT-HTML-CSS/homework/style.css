@@ -9,7 +9,7 @@ h3 {
 }
 h4 {
     background-color: lightblue;
-    width: fit-content;
+    width: max-content;
 }
 
 body {
@@ -41,14 +41,19 @@ img {
 }
 
 .la_vaca {
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.473);
     font-size: 20px;
 }
 
 .texto1 {
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.514);
 }
 #spanId {
     font-size: 25px;
     margin: 50px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
 }
