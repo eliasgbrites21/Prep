@@ -1,22 +1,52 @@
 h1 {
     color: royalblue;
+    background-color: beige;
+    width: fit-content;
+}
+h3 {
+    background-color: lightblue;
+    width: fit-content;
+}
+h4 {
+    background-color: lightblue;
+    width: fit-content;
 }
 
 body {
-    background-image: url ("/assets/img/la_mila_fondo.png");
-    background-size: cover;
-}
+    height: 400px;
+    background-image: url("assets/img/la_mila_fondo.png");
+  background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
 
+  }
+
+
+.divClass {
+    margin:auto;
+}
 .thirdDiv {
+    margin: auto;
     width: 500px;
     height: 600px;
-    background-color: lightseagreen;
+    background-color: rgba(4, 158, 145, 0.6);
     padding: 50px;
     border: 15px double lightgray;
 }
 img {
     height: 250px;
     background-color: transparent;
+}
+
+.la_vaca {
+    background-color: aquamarine;
+    font-size: 20px;
+}
+
+.texto1 {
+    background-color: aquamarine;
 }
 #spanId {
     font-size: 25px;
