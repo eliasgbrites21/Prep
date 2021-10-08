@@ -1,22 +1,22 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta correcta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = null;
+const nuevaString = hola;
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
+const nuevoNum = 21;
 
 // Crea una variable booleana:
-const nuevoBool = null;
+const nuevoBool = 2==='2';
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -28,20 +28,28 @@ const nuevoModulo = 21 % 5 === null;
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-
+  return (x - y);
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (x===y){
+  return ("true");
+}
+  return ("false");
+sonIguales(4, "4")
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (str1.length===str2.length){
+    return("true");
+  }
+  return("false");
 
 }
 
@@ -49,26 +57,34 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (num<90){
+    return("true");
+  }
+  return("false");
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (num%2!==0){
+    return ("true");
+  }
+  return("false");
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // Ojo: No es raiz cuadrada!
   // Tu código:
+  return(Math.pow(num,2));
 
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
+  return(Math.pow(num,exponent));
 
 }
 
