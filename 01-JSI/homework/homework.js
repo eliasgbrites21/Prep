@@ -93,27 +93,33 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-
+  if(numero==0){
+    return(false);
+  }
+  if(numero>0){
+    return ("Es positivo");
+  }
+  return("Es negativo");
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-
+  return(nombre +" "+apellido);
 }
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   // Tu código:
-
+  return(lado*4);
 }
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   // Tu código:
-  
+  return(euro*1.2);
 }
 
 
@@ -122,7 +128,15 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
-
+  let vocal=["a","e","i","o","u","A","E","I","O","U",]
+  let laLetra= letra
+  if (letra.length>1){
+    return("Dato Incorrecto")
+  }
+  if (vocal.includes(laLetra)){
+    return ("Es vocal");
+  }
+  return("Dato Incorrecto");
 }
 
 function obtenerMayor(x, y) {
@@ -130,7 +144,10 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-
+  if (Number.isInteger(x)&&Number.isInteger(y)){
+  return (Math.max(x,y));
+  }
+  return("Sólo números enteros")
 }
 
 /*
@@ -153,21 +170,38 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   // Tu código:
-
+  const ColorSelect=color;
+  const ThisIsColor = {
+    "blue":"This is blue",
+    "red":"This is red",
+    "green":"This is green",
+    "orange":"This is orange",
+  }
+  const ThisIsColorDefault ={
+    default:"Color not found"
+  }
+  const TheColorIs= ThisIsColor[ColorSelect] || ThisIsColorDefault
+  return(TheColorIs)
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (numero==10 || numero==5){
+    return("true")
+  }
+  return("false")
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if(numero<50&&numero>20){
+    return("true")
+  }
+  return("false")
 }
 
 function esPrimo(numero) {
@@ -177,8 +211,12 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   // Tu código:
-
-}
+  if (numero==0||numero==1||numero==4) return false;
+    for (let x=2; x<numero/2; x++){
+      if (numero%x==0) return ("falso");
+    }
+    return ("true")
+  }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
