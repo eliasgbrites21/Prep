@@ -223,7 +223,15 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Pueden usar un while o un bucle do ... while (Investigarlo si quieren hacerlo de la segunda forma)
   // Tu código:
+  let five = 0;
+  let total = "";
   
+  do {
+    five=five+5;
+    total=numero+five;
+  }
+  while (five<40);
+  return (total);
 }
 
 
