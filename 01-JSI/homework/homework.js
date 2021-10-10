@@ -1,13 +1,13 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta correcta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "string";
+const nuevaString = 'Elias';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 21;
 
 // Crea una variable booleana:
-const nuevoBool = 2==='2';
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return (x - y);
+  return x - y;
 }
 
 function sonIguales(x, y) {
@@ -128,10 +128,10 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
-  let vocal=["a","e","i","o","u","A","E","I","O","U",]
-  let laLetra= letra
+  let vocal=["a","e","i","o","u","A","E","I","O","U",];
+  let laLetra= letra;
   if (letra.length>1){
-    return("Dato Incorrecto")
+    return("Dato Incorrecto");
   }
   if (vocal.includes(laLetra)){
     return ("Es vocal");
@@ -147,7 +147,7 @@ function obtenerMayor(x, y) {
   if (Number.isInteger(x)&&Number.isInteger(y)){
   return (Math.max(x,y));
   }
-  return("Sólo números enteros")
+  return("Sólo números enteros");
 }
 
 /*
@@ -176,7 +176,7 @@ function colors(color) {
     "red":"This is red",
     "green":"This is green",
     "orange":"This is orange",
-  }
+  };
   const ThisIsColorDefault ={
     default:"Color not found"
   }
@@ -189,9 +189,9 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero==10 || numero==5){
-    return("true")
+    return("true");
   }
-  return("false")
+  return("false");
 }
 
 function estaEnRango(numero) {
@@ -199,7 +199,7 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(numero<50&&numero>20){
-    return("true")
+    return("true");
   }
   return("false")
 }
@@ -213,9 +213,9 @@ function esPrimo(numero) {
   // Tu código:
   if (numero==0||numero==1||numero==4) return false;
     for (let x=2; x<numero/2; x++){
-      if (numero%x==0) return ("falso");
+      if (numero%x===0) return ("falso");
     }
-    return ("true")
+    return ("true");
   }
 
 function doWhile(numero) {
