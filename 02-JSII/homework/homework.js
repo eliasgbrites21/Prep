@@ -10,6 +10,7 @@ function incrementarPorUno(array) {
   // "array" debe ser una arreglo de números enteros
   // Aumenta cada número por 1 y devuelve el array
   // Tu código:
+  return  array.map(array+1)
 
 }
 
