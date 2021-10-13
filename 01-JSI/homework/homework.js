@@ -176,9 +176,9 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero==10 || numero==5){
-    return("true");
+    return(true);
   }
-  return("false");
+  return(false);
 }
 
 function estaEnRango(numero) {
@@ -186,9 +186,9 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(numero<50&&numero>20){
-    return("true");
+    return(true);
   }
-  return("false")
+  return(false)
 }
 
 function esPrimo(numero) {
@@ -200,9 +200,9 @@ function esPrimo(numero) {
   // Tu código:
   if (numero==0||numero==1||numero==4) return false;
     for (let x=2; x<numero/2; x++){
-      if (numero%x===0) return ("falso");
+      if (numero%x===0) return (false);
     }
-    return ("true");
+    return (true);
   }
 
 function doWhile(numero) {
