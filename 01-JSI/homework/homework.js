@@ -35,10 +35,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x===y){
-  return ("true");
-}
-  return ("false");
+  return (x==y);
 sonIguales(4, "4")
 }
 
@@ -54,9 +51,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num<90){
-    return("true");
+    return(true);
   }
-  return("false");
+  return(false);
 }
 
 function esImpar(num) {
@@ -64,9 +61,9 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num%2!==0){
-    return ("true");
+    return (true);
   }
-  return("false");
+  return(false);
 }
 
 function elevarAlCuadrado(num) {
@@ -124,15 +121,11 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Tu código:
-  let vocal=["a","e","i","o","u","A","E","I","O","U",];
-  let laLetra= letra;
-  if (letra.length>1){
-    return("Dato Incorrecto");
-  }
-  if (vocal.includes(laLetra)){
+  if(letra.length > 1) return ("Dato incorrecto");
+
+  if(letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
     return ("Es vocal");
   }
-  return("Dato Incorrecto");
 }
 
 function obtenerMayor(x, y) {
@@ -173,11 +166,9 @@ function colors(color) {
     "green":"This is green",
     "orange":"This is orange",
   };
-  const ThisIsColorDefault ={
-    default:"Color not found"
-  }
-  const TheColorIs= ThisIsColor[ColorSelect] || ThisIsColorDefault
-  return(TheColorIs)
+  const ThisIsColorDefault =("Color not found");
+  const TheColorIs= ThisIsColor[ColorSelect] || ThisIsColorDefault;
+  return(TheColorIs);
 }
 
 function esDiezOCinco(numero) {
