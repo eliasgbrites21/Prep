@@ -49,14 +49,15 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser un array de enteros
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-
+  let resultadosTotal= resultadosTest.reduce(function(acumulator,valorSiguiente){return acumulator+valorSiguiente;},0);
+  return resultadosTotal/resultadosTest.length;
 }
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser un array de enteros
   // Devuelve el número más grande
   // Tu código:
-
+  
 }
 
 function multiplicarArgumentos() {
