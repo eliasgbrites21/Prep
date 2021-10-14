@@ -96,10 +96,8 @@ function todosIguales(arreglo) {
   // retornar true, caso contrario retornar false.
   // Tu código:
   for(i=0;i<arreglo.length;i++){
-    if(arreglo[i]===arreglo[i+1])
-    return(true);
+    return (arreglo[i]===arreglo[i+1]);
   }
-  return(false);
 } 
 
 function mesesDelAño(array) {
@@ -107,7 +105,16 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   // Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-
+  let arrayEMN=[];
+  for(i=0;i<array.length;i++){
+    if(array[i]==="Enero"||array[i]==="Marzo"||array[i]==="Noviembre"){
+      arrayEMN.push(array[i]);
+    }
+  }
+  if(arrayEMN.length<3){
+    return("No se encontraron los meses pedidos")
+  }
+  return arrayEMN;
 }
 
 function breakStatement(numero) {
