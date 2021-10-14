@@ -143,7 +143,13 @@ function continueStatement(numero) {
   // y se continua con la siguiente iteración
   // Pista: usá el statement 'continue'
   // Tu código:
-  
+  let array=[];
+  for(i=0;i<10;i++){
+    numero=numero+2;
+    if(i===5) continue;
+      array.push(numero);
+  }
+  return array;
 }
 
 function crearGato(nombre, edad) {
@@ -152,7 +158,12 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-
+  const gato={
+    nombre:nombre,
+    edad:edad,
+    meow: function(){return("Meow!")}
+  }
+  return (gato);
 }
 
 function agregarPropiedad(objeto, property) {
@@ -160,6 +171,8 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+  objeto[property]=null;
+  return objeto;
 
 }
 
@@ -168,13 +181,14 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-  
+  objeto[metodo]();
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+  return (objetoMisterioso.numeroMisterioso*5);
 
 }
 
