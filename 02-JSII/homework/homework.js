@@ -57,14 +57,19 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser un array de enteros
   // Devuelve el número más grande
   // Tu código:
-  
+  let mayor=0
+  for(i=0;i<numeros.length;i++){
+    if (numeros[i]>mayor){
+      mayor=numeros[i];
+    }
+  }
+  return mayor;
 }
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Tu código:
-
 }
 
 function cuentoElementos(arreglo){
