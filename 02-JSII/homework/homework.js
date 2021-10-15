@@ -235,7 +235,8 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
   // Tu código:
-
+  usuario.password=nuevaPassword;
+  return usuario;
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -243,7 +244,8 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
-
+  usuario.amigos.push(nuevoAmigo);
+  return usuario;
 }
 
 function sumarLikesDeUsuario(usuario) {
@@ -253,7 +255,11 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-
+  let sumLikes= 0;
+  for (let i = 0; i < usuario.posts.length; i++) {
+    sumLikes = sumLikes + usuario.posts[i].likes;    
+  }
+  return sumLikes;
 }
 
 // No modificar nada debajo de esta línea
