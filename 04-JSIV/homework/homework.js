@@ -3,7 +3,7 @@
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   // Tu código:
-
+return cb(cb);
 }
 
 function operacionMatematica(n1, n2, cb) {
@@ -70,6 +70,14 @@ function capicua(numero){
   // La misma debe retornar: "Es capicua" si el número se lee igual de 
   // izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   // Tu código:
+  let numStr = numero.toString();
+  let middle = Math.ceil(numStr.length/2);
+  for (let i=0;i<middle;i++){
+    if (numStr[i] !== numStr[numStr.length-1-i]){
+      return "No es capicua";
+    }
+    return "Es capicua";
+  }
 
 }
 
