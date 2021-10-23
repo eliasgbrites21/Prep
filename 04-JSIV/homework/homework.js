@@ -85,7 +85,11 @@ function deleteAbc(cadena){
   // Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   // y devuelva la versión modificada o la misma cadena, en caso de no contener dichas letras.
   // Tu código:
-
+let arrayCadena = cadena.split("");
+let arrayFilter= arrayCadena.filter(function(element){
+  return(element!=="a" && element!=="b"&&element!=="c")
+})
+return arrayFilter.join("");
 }
 
 function buscoInterseccion(arreglo1, arreglo2){
@@ -93,8 +97,17 @@ function buscoInterseccion(arreglo1, arreglo2){
   // retornar un nuevo array con la intersección de ambos elementos. (Ej: [4,2,3] unión [1,3,4] = [3,4].
   // Si no tienen elementos en común, retornar un arreglo vacío.
   // Aclaración: los arreglos no necesariamente tienen la misma longitud
-  // Tu código:
-
+  // Tu código:}
+  let newInter=[];
+  for (i=0;i<arreglo1.length;i++){
+    for (j=0; j<arreglo2.length;j++){
+      if (arreglo1[i] === arreglo2[j]){
+        newInter.push(arreglo1[i]);
+        return newInter;
+      }
+      return [];
+    }
+  }
 }
 
 // No modificar nada debajo de esta línea
